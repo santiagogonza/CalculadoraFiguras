@@ -8,14 +8,14 @@ package figura;
 
 // Clase Cuadrado
 public class Cuadrado extends Figura2D {
-
+	//atributo del cuadrado
 	private double lado;
-
+	//constructor con sus parametros
 	public Cuadrado(String color, String material, double lado) {
 		super(color, material);
 		this.lado = lado;
 	}
-
+	//método get y set
 	public double getLado() {
 		return lado;
 	}
@@ -24,12 +24,12 @@ public class Cuadrado extends Figura2D {
 		this.lado = lado;
 	}
 
-	@Override
+	//método para calcular el area del cuadrado
 	public double calcularArea() {
 		return lado * lado;
 	}
 
-	@Override
+	//metodo para calcular el perimetro del cuadrado
 	public double calcularPerimetro() {
 		return 4 * lado;
 	}
