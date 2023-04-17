@@ -10,12 +10,12 @@ package figura;
 public class Cilindro extends Figura3D {
 
     private double altura;
-
+    //constructor con su parametros
     public Cilindro(String color, String material, double radio, double altura) {
         super(color, material, radio);
         this.altura = altura;
     }
-
+    //métodos get y set
     public double getAltura() {
         return altura;
     }
@@ -23,11 +23,11 @@ public class Cilindro extends Figura3D {
     public void setAltura(double altura) {
         this.altura = altura;
     }
-
+    //método para calcular su area
     public double calcularArea() {
         return 2 * Math.PI * super.getRadio() * altura + 2 * Math.PI * super.getRadio() * super.getRadio();
     }
-
+    //método para calcular su perimetro
     public double calcularVolumen() {
         return Math.PI * super.getRadio() * super.getRadio() * altura;
     }
