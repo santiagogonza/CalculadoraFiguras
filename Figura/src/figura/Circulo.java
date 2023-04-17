@@ -9,14 +9,14 @@ package figura;
 
 //Clase Circulo
 public class Circulo extends Figura2D {
-
+	//atributo del circulo
 	private double radio;
-
+	//constructor de clase circulo con parametros
 	public Circulo(double radio, String color, String material) {
 		super(color, material);
 		setRadio(radio);
 	}
-
+	//métodos set y get
 	public double getRadio() {
 		return radio;
 	}
@@ -26,12 +26,12 @@ public class Circulo extends Figura2D {
 		super.setRadio(radio);
 	}
 
-	@Override
+	//método para calcular el area del circulo
 	public double calcularArea() {
 		return Math.PI * radio * radio;
 	}
 
-	@Override
+	//método para calcular el perimetro del circulo
 	public double calcularPerimetro() {
 		return 2 * Math.PI * radio;
 	}
